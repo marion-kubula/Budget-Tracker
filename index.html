@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id='body'>
+    <div class="budget-container">
+
+        <h1 id="h1">My Budget planner</h1>
+        <div class="budget-tracker">
+            <div class="budget">
+                <div id="bud">Budget : </div>
+                <form class="form-input">
+                    <input type="text" id="value" value=$>
+                    <button class="edit">Edit</button>
+                </form>
+                
+            </div>
+
+            <div class="remain">
+                <h2>Remaining:</h2>
+                <div id="remain">$0</div>
+            </div>
+
+            <div class="spend ">
+                <h2>Spent so far:</h2>
+                <div id="spend">$0</div>
+            </div>
+        </div>
+
+        <div class="expense-search">
+            <h2 >Expenses</h2>
+            <input type="text" id="search" placeholder="Type to search">
+        </div>
+        <div id="Entrylist">
+           
+        </div>
+       
+       <div class="addtransaction">
+            <h2>Add Expense</h2>
+        <form id="expense-form">
+                <label for="name">Name</label>
+                <br>
+                <input type="text" id="name" name="name">
+                <label for="cost">Cost</label>
+                <br>
+                <input type="number" id="costs" name="cost">
+        </div>
+        <div>
+            <button  type="submit" id="btn" value="save">save</button>
+        </div>
+        </form>
+
+    </div>
+    </div>
+</body>
+<script src="budget.js"></script>
+
+</html>
